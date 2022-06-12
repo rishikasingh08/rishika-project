@@ -1,193 +1,157 @@
 <!DOCTYPE html>
 <head>
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></head>
 <style>
-        *{
-    margin: 0;
-    padding: 0;
-  }
     body{
-        background:linear-gradient(to left,gray,white,gray);
-        background-repeat: no-repeat;
-        background-size: cover;    
-        }  
-     ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: black;
+        height: 700px;
+        background: linear-gradient(to left, #6600cc 0%, #cc00ff 100%);
+       }
+       .back{
+           width: 80%;
+           background-color: azure;
+           height: 400px;
+           margin-top: 86px;
+           padding: 45px 27px ;  
+           margin: 45px 17px ;
+           border-radius: 15px;
+           box-shadow: black 6px 8px ;    
+       }
+       .row{
+           color: azure;
+           background-color: black;
+           font-size: 23px;
+           border-radius: 5px;
+           box-shadow: gray 6px 5px ;
+          
+           }
+       a{
+           color: azure;
+           padding: 1px 5px ;
+           text-decoration: none;
+       }
+       a:hover{
+           background-color: aliceblue;
+           border-radius: 6px;
+           color: black;
+       }
+       #home h1{
+           text-align: center;
+           font-size: 50px;
+           font-family: Comic Sans MS;
+       }
+        #home .btn{
+            background: linear-gradient(to bottom, #6600cc 0%, #cc00ff 100%) ;
+            color: azure;
+            font-size: 23px;
+            letter-spacing: 2px;
+            border-radius: 4px;
+            border: none;
+            padding: 12px 14px ;
+            box-shadow: gray 6px 8px ;
+            background-repeat: no-repeat;
+        }
+        #home .btn:hover{
+            background: linear-gradient(to top, #6600cc 0%, #cc00ff 100%) ;
+            background-repeat: no-repeat;
+        }
+    
+       
+     
+        #about .back{
+            background: linear-gradient(to left, #99baf0  0%, #6006fcb7 100%);
+                 color: linear-gradient(to top, #6600cc 0%, #cc00ff 100%);
+                 background-repeat: no-repeat;
+            }
+             
+          #about .row h1 p{
+              background-color: aliceblue;
+              color: black;
+              font-size: 23px;
+              border-radius: 14px;
+              box-shadow: 3px 2px gray;
 
-}
+          } 
+          #about h1{
+              background-color: aliceblue;
+              color: black;
+              text-align: center;
+          }    
+          #about a{
+            background: linear-gradient(to left, #99baf0  0%, #6006fcb7 100%);
+            color: white;
+            font-size: 23px;
+            border: none;
+            padding: 12px 13px ;
+            letter-spacing: 2px;
+            box-shadow: 5px 7px gray;
 
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 23px;
-  font-weight: 600;
-}
-
-li a:hover {
-  background:linear-gradient(gray,white,gray);
-  color: blue;
-  border-radius: 23px;
-
-}
-#home h1{
-   font-size: 96px;
-   font-family: Brush Script MT;
-   text-align: center;
-   margin-top:  auto;
-   padding-top: 47px;
-   margin-top: 150px;
-}
-#home .btn{
-    background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(243, 191, 226));
-    font-size: 24px;
-    border-radius: 6px;
-    text-decoration: none;
-}
-#about{
-    background-color: #111;
-    margin-top: 600px;
-    text-align: center;
-}
-#about h1{
-    color: aliceblue;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 65px;
-    text-align: center;
-}
-#about p{
-  color: aliceblue;
- background-color: ;
-  font-size: 23px;
-  margin-left: 40px;
- text-align: center;
-
-}
-#drawings{
-  background-color: aliceblue;
-
-}
-#drawings img{
-  width: 300px;
-  margin-left: 56px;
-  border: solid black 3px;
-  box-shadow: #111 3px 5px ;
-}
-#drawings h1{
-  font-size: 67px;
-  color: #111;
-  text-align: center;
-}
-#about p a{
-  color: black;
-  text-decoration: none;
-  background-color: aqua;
-  border-radius: 7px;
-  letter-spacing: 2px;
-  padding: 2px 3px ;
-
-}
-#about p a:hover{
-  border: solid 3px white;
-  
-}
-#drawings a{
-  color: black;
-  text-decoration: none;
-  background-color: aqua;
-  border-radius: 7px;
-  letter-spacing: 2px;
-  padding: 2px 3px ;
-  padding-top: 7px;
-  font-size: 23px;
-  font-weight: 500;
-  box-shadow: #111 7px 4px ;
-  
-
-}
-#drawings a:hover{
-  border: solid 3px white;
-  
-}
-#paintings  h1{
-   font-size: 96px;
-   font-family: Brush Script MT;
-   text-align: center;
- 
-}
-#paintings  img{
-  width: 300px;
-  margin-left: 56px;
-  border: solid black 3px;
-  box-shadow: #111 3px 5px ;
-}
-</style>
+          }
+          #Services .back{
+            background: linear-gradient(to top, #4ed1f1 0%, #cc00ff 100%) ;
+          }
+          #Services .font{
+             background-color: azure;
+             width: 100%;
+             height: 90%;
+             border-radius: 9px;
+             box-shadow: gray 9px 8px ;
+                    }
+          #Services .font h1{
+            font-size: 58px;
+            text-align: center;
+          }
+          
+                  </style>
 <html>
     <body>
-     <ul>
-        <li><a class="active" href="#home">Home</a></li>
-         <li><a href="#about">About</a></li>
-         <li><a href="#drawings">Drawings</a></li>
-         <li><a href="#painting">painting</a></li>
-     </ul>
-     <div id="home">
-            <h1 >Drawings and Painting <br> </h1>
-           
-     </div>
-     <div id="about"> <br><br>
-         <h1>About Me</h1> <br>
-          <p>Hey!I am Rishika .I Belong from Hyderbad. <br> My Dad is a Business man and My Mom is a housewife. My hobbies are logo Desgining.panting.drawing and craft. <br> This website I make for you <br> In this wedsite you can see my drawing and painting picture.  <br> Thank you  <br> <br>  <a href="#drawings" class="btn btn-primary" >drawings</a> <br><br></p> <br><br><br>
-             
-     </div>
-     <div id="drawings">
-       <h1>Drawings</h1>
-      <img src="1.png" alt="">
-      <img src="12.png" alt="">
-      <img src="13.png" alt="">
-      <img src="14.png" alt="">
-      <img src="16.png" alt="">
-      <img src="18.png" alt="">
-      <img src="20.png" alt="">
-      <img src="21.png" alt="">
-      <img src="22.png" alt="">
-      <img src="2222.png" alt="">
-      <img src="23.png" alt="">
-      <img src="ris.png" alt="">
-      <img src="3333.png" alt="">
-       <img src="rtgfgdrgerg.png" alt="">
-      <img src="45.png" alt="">
-      <img src="345.png" alt="">
-      <img src="56.png" alt="">
-      <img src="67.png" alt="">
-      <a href="#paintings" class="btn btn-primary" >Paintings</a>
-    
-     </div>
-     <div id="paintings">
-       <h1>Paintings</h1>
-         <img src="00000.png" alt="">
-         <img src="1111.png" alt="">
-         <img src="222222222222.png" alt="">
-         <img src="4545.png" alt="">
-         <img src="432677.png" alt="">
-          <img src="098.png" alt="">
-         <img src=".png" alt="">
-         <img src="234.png" alt="">
-         <img src="99999.png" alt="">
-         <img src="87654.png" alt="">
-         <img src="890.png" alt="">
-         <img src="8900.png" alt="">
-         <img src="8900000.png" alt="">`   
-         <img src="duytbh.png" alt="">                                                                                                                        
-     </div>
+        <div class="navbar">
+            <div class="back">
+              <div class="row">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#Services"> Services & Contact</a>
+                <!-- <a href=""></a> -->
+              </div>
+              <div id="home">
+                <h1>How To Design Your Own <br> Website  <br>
+                    <button class="btn">Get Stared</button></h1>             
+                </div>
+            </div>
+        </div>
+        <div id="about">
+            <div class="back">
+                <div class="row">
+                    <h1>About us <br> <p>Hey! I am Rishika Singh.I Belong from Hyderbad. My  Dad is a Business man and My Mom is a housewife.I am in 9th standard. My hobbies are logo Desgining.painting.drawing and craft <br> Thank you <br> <br><br> <a href="#Services" class="btn btn-primary" >  Services</a>  <br><br></p> </h1>   
+                   
+             </div>
+                             
+            </div>
+          </div>
+           </div>
+                
+           <div id="Services">
+           <div class="back">
+               <div class="font">
+                <h1><u>Services</u></h1>
+                <div class="para">
+                    <h3 align="center"> I'am very good at Logo Desgining, Painting, Drawing, Craft and other things...</h3><br><br>
+                    <h2 align="center">** <u>Contact Me</u> ** </h2>
+                    <p align="center">
+                        Email :: <b>rishika08singh@gmail.com</b>  <br>
+                        Github :: <b><a href="https://github.com/rishikasingh08" style="color:black">Github Profile</a></b>    
+                    </p>
+                </div>
+                   
+               </div>
+           </div>
+               
+           </div>
+                   
+        
     </body>
 </html>
